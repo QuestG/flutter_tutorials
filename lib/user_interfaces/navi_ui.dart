@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:tutorials/user_interfaces/adding_interactivity.dart';
 
 class NaviUi extends StatelessWidget {
   var itemTitles = ['添加互动'];
 
-  var routes = [];
+  var routes = [FavoriteWidget()];
 
   @override
   Widget build(BuildContext context) {
