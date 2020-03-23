@@ -1,15 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:tutorials/animation/AnimatedOpacity.dart';
 import 'package:tutorials/animation/adding_interactivity.dart';
 import 'package:tutorials/animation/animated_container.dart';
 import 'package:tutorials/animation/animations/samples_animation.dart';
 
 class NaviAnimation extends StatelessWidget {
-  var itemTitles = ['添加互动', 'LogoAnimation', 'AnimatedContainer'];
+  var itemTitles = [
+    '添加互动',
+    'LogoAnimation',
+    'AnimatedContainer',
+    'AnimatedOpacity'
+  ];
 
   var routes = [
     FavoriteWidget(),
     LogoAnimationWidget(),
-    AnimatedContainerWidget()
+    AnimatedContainerWidget(),
+    AnimatedOpacityWidget()
   ];
 
   @override
