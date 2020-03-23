@@ -3,6 +3,7 @@ import 'package:tutorials/animation/adding_interactivity.dart';
 import 'package:tutorials/animation/animated_container.dart';
 import 'package:tutorials/animation/animated_opacity.dart';
 import 'package:tutorials/animation/animation_physics.dart';
+import 'package:tutorials/animation/animation_route.dart';
 import 'package:tutorials/animation/samples_animation.dart';
 
 class NaviAnimation extends StatelessWidget {
@@ -11,7 +12,8 @@ class NaviAnimation extends StatelessWidget {
     'LogoAnimation',
     'AnimatedContainer',
     'AnimatedOpacity',
-    'AnimationMockPhysics'
+    'AnimationMockPhysics',
+    'route间跳转动画'
   ];
 
   var routes = [
@@ -19,7 +21,8 @@ class NaviAnimation extends StatelessWidget {
     LogoAnimationWidget(),
     AnimatedContainerWidget(),
     AnimatedOpacityWidget(),
-    AnimationPhysicsDemo()
+    AnimationPhysicsDemo(),
+    Page1()
   ];
 
   @override
