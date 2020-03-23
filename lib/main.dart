@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tutorials/user_interfaces/navi_ui.dart';
+import 'package:tutorials/animation/navi_animation.dart';
 
 void main() => runApp(MyApp());
 
@@ -35,9 +35,9 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   var divider = Divider(color: Colors.grey);
 
-  var itemTitles = ['用户界面', '数据调用和后端', '应用的无障碍和国际化'];
+  var itemTitles = ['Animation', 'Design', 'Forms'];
 
-  var routes = [NaviUi()];
+  var routes = [NaviAnimation()];
 
   @override
   Widget build(BuildContext context) {

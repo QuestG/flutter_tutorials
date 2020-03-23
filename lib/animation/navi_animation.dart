@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:tutorials/user_interfaces/adding_interactivity.dart';
+import 'package:tutorials/animation/adding_interactivity.dart';
+import 'package:tutorials/animation/animations/samples_animation.dart';
 
-class NaviUi extends StatelessWidget {
-  var itemTitles = ['添加互动'];
+class NaviAnimation extends StatelessWidget {
+  var itemTitles = ['添加互动', 'LogoAnimation'];
 
-  var routes = [FavoriteWidget()];
+  var routes = [FavoriteWidget(), LogoAnimationWidget()];
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +13,7 @@ class NaviUi extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('用户界面'),
+        title: Text('Animation'),
       ),
       body: ListView.separated(
           itemBuilder: (context, index) {
