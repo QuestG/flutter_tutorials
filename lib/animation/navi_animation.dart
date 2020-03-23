@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:tutorials/animation/AnimatedOpacity.dart';
 import 'package:tutorials/animation/adding_interactivity.dart';
 import 'package:tutorials/animation/animated_container.dart';
+import 'package:tutorials/animation/animated_opacity.dart';
+import 'package:tutorials/animation/animations/animation_physics.dart';
 import 'package:tutorials/animation/animations/samples_animation.dart';
 
 class NaviAnimation extends StatelessWidget {
@@ -9,14 +10,16 @@ class NaviAnimation extends StatelessWidget {
     '添加互动',
     'LogoAnimation',
     'AnimatedContainer',
-    'AnimatedOpacity'
+    'AnimatedOpacity',
+    'AnimationMockPhysics'
   ];
 
   var routes = [
     FavoriteWidget(),
     LogoAnimationWidget(),
     AnimatedContainerWidget(),
-    AnimatedOpacityWidget()
+    AnimatedOpacityWidget(),
+    AnimationPhysicsDemo()
   ];
 
   @override
