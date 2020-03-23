@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:tutorials/animation/adding_interactivity.dart';
 import 'package:tutorials/animation/animated_container.dart';
 import 'package:tutorials/animation/animated_opacity.dart';
-import 'package:tutorials/animation/animations/animation_physics.dart';
-import 'package:tutorials/animation/animations/samples_animation.dart';
+import 'package:tutorials/animation/animation_physics.dart';
+import 'package:tutorials/animation/samples_animation.dart';
 
 class NaviAnimation extends StatelessWidget {
   var itemTitles = [
