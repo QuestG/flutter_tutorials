@@ -12,6 +12,8 @@ class _TextFieldSampleState extends State<TextFieldSample> {
 
   var _textInChange = '';
 
+  var _focusNode = FocusNode();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,6 +28,7 @@ class _TextFieldSampleState extends State<TextFieldSample> {
             ),
             Text(_textInControl),
             TextField(
+              focusNode: _focusNode,
               onChanged: (text) {
                 setState(() {
                   _textInChange = text;
@@ -35,6 +38,12 @@ class _TextFieldSampleState extends State<TextFieldSample> {
             Text(_textInChange),
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          FocusScope.of(context).requestFocus(_focusNode);
+        },
+        child: Icon(Icons.edit),
       ),
     );
   }
