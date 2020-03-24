@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tutorials/animation/navi_animation.dart';
 import 'package:tutorials/design/navigation_design.dart';
+import 'package:tutorials/forms/navigation_forms.dart';
 
 void main() => runApp(MyApp());
 
@@ -38,7 +39,7 @@ class _HomePageState extends State<HomePage> {
 
   var itemTitles = ['Animation', 'Design', 'Forms'];
 
-  var routes = [NaviAnimation(), NaviDesign()];
+  var routes = [NaviAnimation(), NaviDesign(), NaviForms()];
 
   @override
   Widget build(BuildContext context) {
