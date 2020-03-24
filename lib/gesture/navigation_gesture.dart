@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:tutorials/gesture/dismissible_sample.dart';
+import 'package:tutorials/gesture/ink_well.dart';
 
 class NaviGestures extends StatelessWidget {
-  var titles = ['Dismissible'];
+  var titles = ['Dismissible', 'InkWell'];
 
-  var widgets = [DismissibleSample()];
+  var widgets = [DismissibleSample(), InkWellSample()];
 
   @override
   Widget build(BuildContext context) {
