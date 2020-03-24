@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:tutorials/design/tab.dart';
 import 'package:tutorials/design/theme.dart';
 
 class NaviDesign extends StatelessWidget {
-  var titles = ['Theme设置全局或局部主题风格'];
+  var titles = ['Theme设置全局或局部主题风格', '使用tab'];
 
-  var widgets = [ThemeSample()];
+  var widgets = [ThemeSample(), TabSample()];
 
   @override
   Widget build(BuildContext context) {
