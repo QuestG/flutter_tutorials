@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tutorials/animation/navi_animation.dart';
 import 'package:tutorials/design/navigation_design.dart';
 import 'package:tutorials/forms/navigation_forms.dart';
+import 'package:tutorials/gesture/navigation_gesture.dart';
 
 void main() => runApp(MyApp());
 
@@ -37,9 +38,9 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   var divider = Divider(color: Colors.grey);
 
-  var itemTitles = ['Animation', 'Design', 'Forms'];
+  var itemTitles = ['Animation', 'Design', 'Forms', 'Gestures'];
 
-  var routes = [NaviAnimation(), NaviDesign(), NaviForms()];
+  var routes = [NaviAnimation(), NaviDesign(), NaviForms(), NaviGestures()];
 
   @override
   Widget build(BuildContext context) {
