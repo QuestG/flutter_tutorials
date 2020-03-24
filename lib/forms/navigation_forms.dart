@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:tutorials/forms/TextFieldSample.dart';
+import 'package:tutorials/forms/text_field_sample.dart';
+import 'package:tutorials/forms/text_form_field_sample.dart';
 
 class NaviForms extends StatelessWidget {
-  var titles = ['TextField'];
+  var titles = ['TextField', 'TextFormField'];
 
-  var widgets = [TextFieldSample()];
+  var widgets = [TextFieldSample(), TextFormFieldSample()];
 
   @override
   Widget build(BuildContext context) {
