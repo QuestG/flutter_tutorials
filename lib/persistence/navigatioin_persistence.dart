@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:tutorials/persistence/shared_preferences.dart';
+import 'package:tutorials/persistence/sqlite.dart';
 
 class NaviPersistence extends StatelessWidget {
-  var titles = [
-    'SharedPreferences',
-  ];
+  var titles = ['SharedPreferences', 'sqflite'];
 
-  var widgets = [SharedPreferencesSample()];
+  var widgets = [SharedPreferencesSample(), SqliteSample()];
 
   @override
   Widget build(BuildContext context) {
