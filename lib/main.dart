@@ -3,6 +3,7 @@ import 'package:tutorials/animation/navi_animation.dart';
 import 'package:tutorials/design/navigation_design.dart';
 import 'package:tutorials/forms/navigation_forms.dart';
 import 'package:tutorials/gesture/navigation_gesture.dart';
+import 'package:tutorials/images/navigation_images.dart';
 
 void main() => runApp(MyApp());
 
@@ -38,9 +39,15 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   var divider = Divider(color: Colors.grey);
 
-  var itemTitles = ['Animation', 'Design', 'Forms', 'Gestures'];
+  var itemTitles = ['Animation', 'Design', 'Forms', 'Gestures', 'Images'];
 
-  var routes = [NaviAnimation(), NaviDesign(), NaviForms(), NaviGestures()];
+  var routes = [
+    NaviAnimation(),
+    NaviDesign(),
+    NaviForms(),
+    NaviGestures(),
+    NaviImages()
+  ];
 
   @override
   Widget build(BuildContext context) {
