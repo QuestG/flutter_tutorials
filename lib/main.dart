@@ -4,6 +4,7 @@ import 'package:tutorials/design/navigation_design.dart';
 import 'package:tutorials/forms/navigation_forms.dart';
 import 'package:tutorials/gesture/navigation_gesture.dart';
 import 'package:tutorials/images/navigation_images.dart';
+import 'package:tutorials/lists/navigation_lists.dart';
 
 void main() => runApp(MyApp());
 
@@ -39,14 +40,22 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   var divider = Divider(color: Colors.grey);
 
-  var itemTitles = ['Animation', 'Design', 'Forms', 'Gestures', 'Images'];
+  var itemTitles = [
+    'Animation',
+    'Design',
+    'Forms',
+    'Gestures',
+    'Images',
+    'Lists'
+  ];
 
   var routes = [
     NaviAnimation(),
     NaviDesign(),
     NaviForms(),
     NaviGestures(),
-    NaviImages()
+    NaviImages(),
+    NaviLists()
   ];
 
   @override
