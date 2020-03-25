@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:tutorials/lists/list_with_sliver_appbar.dart';
 import 'package:tutorials/lists/multi_item_lists.dart';
 
 class NaviLists extends StatelessWidget {
-  var titles = [
-    '拥有不同列表项的列表',
-  ];
+  var titles = ['拥有不同列表项的列表', 'CustomScrollView'];
 
-  var widgets = [MultiItemsList()];
+  var widgets = [MultiItemsList(), SliverSample()];
 
   @override
   Widget build(BuildContext context) {
