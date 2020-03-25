@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:tutorials/gesture/ink_well.dart';
 import 'package:tutorials/images/cached_image.dart';
+import 'package:tutorials/images/faded_image.dart';
 
 class NaviImages extends StatelessWidget {
-  var titles = ['CachedNetworkImage', 'InkWell'];
+  var titles = ['CachedNetworkImage', 'InkWell', 'FadeInImage'];
 
-  var widgets = [CachedImage()];
+  var widgets = [CachedImage(), InkWellSample(), FadeInImageSample()];
 
   @override
   Widget build(BuildContext context) {
