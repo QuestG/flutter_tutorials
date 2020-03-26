@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tutorials/testing/flutter_driver_sample.dart';
+import 'package:tutorials/testing/widget_test_sample.dart';
 
 ///integration test并不会和待测应用运行在同一个进程内。因此，我们需要同一个文件夹下创建两份文件。
 ///为了方便，把文件夹命名为 test_driver。
@@ -19,9 +20,9 @@ import 'package:tutorials/testing/flutter_driver_sample.dart';
 ///4）完成测试后，在 teardownAll() 函数中与待测应用断开连接
 
 class NaviTesting extends StatelessWidget {
-  var titles = ['集成测试：滚动列表的测试用例', 'Video'];
+  var titles = ['集成测试：滚动列表的测试用例', 'Widget 测试'];
 
-  var widgets = [FlutterDriverSample()];
+  var widgets = [FlutterDriverSample(), TodoList()];
 
   @override
   Widget build(BuildContext context) {
