@@ -6,6 +6,7 @@ import 'package:tutorials/gesture/navigation_gesture.dart';
 import 'package:tutorials/images/navigation_images.dart';
 import 'package:tutorials/lists/navigation_lists.dart';
 import 'package:tutorials/persistence/navigatioin_persistence.dart';
+import 'package:tutorials/plugins/navigation_plugins.dart';
 
 void main() => runApp(MyApp());
 
@@ -48,7 +49,8 @@ class _HomePageState extends State<HomePage> {
     'Gestures',
     'Images',
     'Lists',
-    'Persistence'
+    'Persistence',
+    'Plugins'
   ];
 
   var routes = [
@@ -58,7 +60,8 @@ class _HomePageState extends State<HomePage> {
     NaviGestures(),
     NaviImages(),
     NaviLists(),
-    NaviPersistence()
+    NaviPersistence(),
+    NaviPlugins()
   ];
 
   @override
