@@ -54,15 +54,17 @@ class _TakePicScreenState extends State<TakePicScreen> {
       appBar: AppBar(
         title: Text('take a pic'),
       ),
-      body: FutureBuilder<void>(builder: (context, snapshot) {
-        if (snapshot.connectionState == ConnectionState.done) {
-          return CameraPreview(_controller);
-        } else {
-          return Center(
-            child: CircularProgressIndicator(),
-          );
-        }
-      }),
+      body: FutureBuilder<void>(
+          future: _initialControllerFuture,
+          builder: (context, snapshot) {
+            if (snapshot.connectionState == ConnectionState.done) {
+              return CameraPreview(_controller);
+            } else {
+              return Center(
+                child: CircularProgressIndicator(),
+              );
+            }
+          }),
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
           await _initialControllerFuture;

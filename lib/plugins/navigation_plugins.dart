@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:tutorials/plugins/camera_sample.dart';
+import 'package:tutorials/plugins/video_player_sample.dart';
 
 class NaviPlugins extends StatelessWidget {
   var titles = ['Camera', 'Video'];
 
-  var widgets = [TakePicScreen()];
+  var widgets = [TakePicScreen(), VideoDisplayScreen()];
 
   @override
   Widget build(BuildContext context) {
