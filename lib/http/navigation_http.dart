@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:tutorials/http/http_delete_sample.dart';
 import 'package:tutorials/http/http_isolate_sample.dart';
+import 'package:tutorials/http/websocket_sample.dart';
 
 class NaviHttp extends StatelessWidget {
-  var titles = ['删除网络数据', '在后台解析json数据'];
+  var titles = ['删除网络数据', '在后台解析json数据', '发起WebScoket请求'];
 
-  var widgets = [HttpDeleteSample(), IsolateSample()];
+  var widgets = [HttpDeleteSample(), IsolateSample(), WebSocketSample()];
 
   @override
   Widget build(BuildContext context) {
