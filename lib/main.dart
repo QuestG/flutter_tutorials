@@ -3,6 +3,7 @@ import 'package:tutorials/animation/navi_animation.dart';
 import 'package:tutorials/design/navigation_design.dart';
 import 'package:tutorials/forms/navigation_forms.dart';
 import 'package:tutorials/gesture/navigation_gesture.dart';
+import 'package:tutorials/http/navigation_http.dart';
 import 'package:tutorials/images/navigation_images.dart';
 import 'package:tutorials/lists/navigation_lists.dart';
 import 'package:tutorials/persistence/navigatioin_persistence.dart';
@@ -52,7 +53,8 @@ class _HomePageState extends State<HomePage> {
     'Lists',
     'Persistence',
     'Plugins',
-    'Testing'
+    'Testing',
+    'Http'
   ];
 
   var routes = [
@@ -64,7 +66,8 @@ class _HomePageState extends State<HomePage> {
     NaviLists(),
     NaviPersistence(),
     NaviPlugins(),
-    NaviTesting()
+    NaviTesting(),
+    NaviHttp()
   ];
 
   @override
